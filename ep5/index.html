@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>North Forest</title>
+    <style>
+      /* CSS for button */
+      .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+	  /* CSS for setting font-family to System Font */
+          body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        color: white;
+      }
+	  
+      /* CSS for background */
+      body {
+        background-image: url('https://watchnorthforest.github.io/background.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+}
+
+}
+
+}
+
+	      h1 {
+        text-align: center;
+      }
+	    div {
+        text-align: center;
+      }
+	    /* CSS for centering the video player */
+video {
+  display: block;
+  margin: 0 auto;
+}
+   a {
+        text-decoration: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1> <img src="https://watchnorthforest.github.io/pointright.png" alt="Your image description" width="48" height="48"> Episode 5 "The Social War" <img src="https://watchnorthforest.github.io/pointleft.png" alt="Your image description" width="48" height="48"> </h1> 
+      <video id="vp" width="1,280" height="720" controls>
+        <source src="ep.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+    </div>
+	    <script>
+      // JavaScript for toggling fullscreen mode
+      const video = document.getElementById("vp");
+      
+      document.addEventListener("keydown", function(event) {
+        if (event.key === "f" || event.key === "F") {
+          if (video.requestFullscreen) {
+            video.requestFullscreen();
+          } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
